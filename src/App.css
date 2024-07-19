@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#root{
+  width: 100%;
+  height: 100vh;
+}
+header{
+  width: 100%;
+  height: auto;
+  background-color:darkcyan;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem 0rem 1.5rem 0rem;
+}
+ul{
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  
+}
+
+.style_a{
+  background-color: rgb(76, 67, 202);
+  text-decoration: none;
+  color: inherit;
+  padding: 5px 6px 5px 6px
+  
+}
+
+.div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+}
+
+.h1Counter{
+  font-size: 3rem;
+}
+
+.buttom{
+  padding: .5rem 1rem .5rem 1rem;
+  border-radius: 20rem;
+  font-size: 1.1rem;
+  border: 1px solid;
+}
+
+
+
+
