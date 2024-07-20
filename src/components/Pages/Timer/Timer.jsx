@@ -41,7 +41,7 @@ export const Timer = () => {
 
   return (
     <div>
-      <h1>Seconds: {seconds}</h1>
+      <h2>Seconds: {seconds}</h2>
       <button onClick={startTimer}>Start</button>
       <button onClick={pauseTimer}>Pause</button>
       <button onClick={resetTimer}>Reset</button>

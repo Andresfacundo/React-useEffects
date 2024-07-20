@@ -14,8 +14,8 @@ export const Clock = () => {
   
     return (
       <div className="clock">
-          <h1>Digital Clock</h1>
-        <h2>{time}</h2>
+          <h2>Digital Clock</h2>
+        <h3>{time}</h3>
       </div>
     );
   };

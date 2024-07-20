@@ -22,7 +22,7 @@ export const UserActive = () => {
   
     return (
       <div>
-        <h1>{message}</h1>
+        <h2>{message}</h2>
         <input
           type="text"
           placeholder="Username"
