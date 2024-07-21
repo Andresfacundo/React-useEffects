@@ -11,18 +11,19 @@ export const UserActive = () => {
       const user = Users.find((user) => user.username === username);
       if (user) {
         if (user.password === password) {
-          setMessage(`Welcome ${user.username}`);
+          setMessage(`Bienvenido ${user.username}`);
         } else {
-          setMessage("Welcome User anonymous");
+          setMessage("Bienvenido usuario anonimo");
         }
       } else {
-        setMessage(" Welcome User anonymous");
+        setMessage(" Bienvenido usuario anonimo ");
       }
     }, [username, password]);
   
     return (
-      <div>
-        <h2>{message}</h2>
+      <div className='boxLogin'>
+        <h2 className='loginTitle'>{message}</h2>
+        <div className='containerInput'>
         <input
           type="text"
           placeholder="Username"
@@ -35,6 +36,7 @@ export const UserActive = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        </div>
       </div>
     );
   };

@@ -40,11 +40,13 @@ export const Timer = () => {
   }, [seconds]);
 
   return (
-    <div>
-      <h2>Seconds: {seconds}</h2>
-      <button onClick={startTimer}>Start</button>
-      <button onClick={pauseTimer}>Pause</button>
-      <button onClick={resetTimer}>Reset</button>
+    <div className='boxTime'>
+      <h2 className='titleTime'>Segundos: {seconds}</h2>
+      <div className='boxBtn'>
+      <button className='btnTime' onClick={startTimer}>Iniciar</button>
+      <button className='btnTime' onClick={pauseTimer}>Pausar</button>
+      <button className='btnTime' onClick={resetTimer}>Reiniciar</button>
+      </div>
     </div>
   );
 };
